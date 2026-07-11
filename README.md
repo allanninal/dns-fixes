@@ -1,6 +1,6 @@
 # DNS and Domains Fixes
 
-Small, tested Python and Node.js scripts that detect and repair real problems on **DNS and Domains** stores. Missing or wrong records, broken email authentication (SPF, DKIM, DMARC), nameserver and delegation mismatches, TTL and propagation surprises, DNSSEC gaps, certificates and domains about to expire, CAA blocking issuance, and dangling records that invite subdomain takeover.
+Small, tested Python and Node.js scripts that detect and repair real problems across **DNS and domains**. Missing or wrong records, broken email authentication (SPF, DKIM, DMARC), nameserver and delegation mismatches, TTL and propagation surprises, DNSSEC gaps, certificates and domains about to expire, CAA blocking issuance, and dangling records that invite subdomain takeover.
 
 Every fix is safe by default. The scripts start in a dry run mode that reports what they would do, so you can read the plan before anything writes.
 
@@ -102,11 +102,11 @@ node --test
 
 ## A note on safety
 
-These scripts can change orders, inventory, prices, and issue refunds. Always run with `DRY_RUN=true` first, read the output, and confirm it is correct before you let a script write. Test against a staging store when you can.
+These scripts can change live DNS records through the Cloudflare API. Always run with `DRY_RUN=true` first, read the output, and confirm it is correct before you let a script write. Test against a non-production zone when you can.
 
 ## Work with me
 
-Fighting a DNS and Domains bug you would rather hand off? That is what I do.
+Fighting a DNS, email deliverability, or domain problem you would rather hand off? That is what I do.
 
 - GitHub: [github.com/allanninal](https://github.com/allanninal)
 - LinkedIn: [in/allanninal](https://www.linkedin.com/in/allanninal/)
